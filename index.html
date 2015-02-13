@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Playfair+Display:400,400italic|Lato:900" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Triangulator</title>
   </head>
   <body>
-
+    <header>
+      <h1>Triangulator</h1>
+    </header>
+    <main>
+      <section>
+        <p>Enter three lengths to determine what type of triangle they would make, if one at all.</p>
+        <form>
+          <fieldset>
+            <label for="x_value">First length</label>
+            <input id="x_value" type="number" placeholder="First length" />
+            <label for="y_value">Second length</label>
+            <input id="y_value" type="number" placeholder="Second length" />
+            <label for="z_value">Third length</label>
+            <input id="z_value" type="number" placeholder="Third length" />
+          </fieldset>
+          <button type="submit">Check it!</button>
+          <button type="reset">Clear form</button>
+        </form>
+      </section>
+      <section id="result">
+        <div id="triangle">
+          <p>Lengths of <span id="x"></span>, <span id="y"></span>, and <span id="z"></span> will give you <span id="article"></span> <span id="type"></span> triangle.</p>
+        </div>
+        <div id="error">
+          <p></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><a href="http://zulaica.info" target="_blank">▶︎▲▼⬆︎▶︎</a> made this.</p><p>Source available on <a href="https://github.com/zulaica/triangulator" target="_blank">GitHub</a>.</p>
+    </footer>
   </body>
 </html>
