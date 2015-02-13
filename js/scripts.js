@@ -4,7 +4,7 @@ var triangulator = function(x,y,z) {
   if (x + y > z && x + z > y && y + z > x) {
     if (x === y && y === z) {
       triangle = "equilateral";
-    } else if (x === y || y === z) {
+    } else if (x === y || y === z || x === z) {
       triangle = "isosceles";
     } else {
       triangle = "scalene";

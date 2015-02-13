@@ -4,7 +4,7 @@ describe("triangulator", function() {
   });
 
   it("returns 'isosceles' if exactly two inputs are equal", function() {
-    expect(triangulator(3,3,1)).to.equal("isosceles");
+    expect(triangulator(3,1,3)).to.equal("isosceles");
   });
 
   it("returns 'scalene' if exactly two inputs are equal", function() {
