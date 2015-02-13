@@ -14,4 +14,8 @@ describe("triangulator", function() {
   it("detrmines whether the three inputs could make a triangle", function() {
     expect(triangulator(2,2,8)).to.equal("nope");
   });
+
+  it("checks to see if any input is less than or equal to zero", function() {
+    expect(triangulator(1,1,0)).to.equal("impossible");
+  });
 });
