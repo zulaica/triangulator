@@ -5,7 +5,7 @@ Triangulator is a simple website that will help you determine what sort of trian
 - Check for other triangle types (e.g. right).
 
 ## Credits
-Pedantic Title Case is written and maintained by [David Zulaica](http://zulaica.info).
+Triangulator is written and maintained by [David Zulaica](http://zulaica.info).
 
 ## License
 Licensed under GNU GPL v2.0
